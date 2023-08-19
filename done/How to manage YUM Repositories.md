@@ -1,4 +1,4 @@
-#how-to, #yum , #pulp, #nexus, #repository
+#how-to, #yum , #pulp, #nexus, #repository, #linux 
 
 YUM is a package manager for Linux distributions that simplifies the process of installing and updating software packages. Managing YUM repositories can help you maintain a custom software repository or mirror an upstream repository. In this article, we'll explore why you might want to manage YUM repositories, and some solutions for doing so.
 
