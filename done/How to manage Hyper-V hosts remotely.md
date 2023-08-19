@@ -1,8 +1,4 @@
-#hyper-v 
-#windows
-#remotely
-#manage
-
+#how-to, #hyper-v , #windows, #remote, #manage
 
 As a administrator or developer, you might manage a lot of Hyper-V Servers. However, managing hosts independently is difficult.
 
@@ -18,7 +14,7 @@ Next, Let's look at this.
     * Hyper-V username : vincent.lee
     * Hyper-V password : <vincent.lee password in Hyper-V>
 
-### How to manage Hyper-V hosts Remotely
+### How to manage Hyper-V hosts remotely
 
 * Server Side
     * On the Hyper-V host to be managed, open a Windows PowerShell session as Administrator.
@@ -43,13 +39,13 @@ Next, Let's look at this.
     * Select **Programs and Features** on the right under related settings.
     * Select **Turn Windows Features on or off**.
     * Select **Hyper-V** and click **OK**. (If you just want to manage Hyper-V hosts Remotely, you can install Management Tool only.)
-      ![](../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely.png)
+      ![|500](../../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely.png)
     * When the installation has completed you are prompted to restart your computer.
 
 2. Add remote Hyper-V Server IP into your **hosts** file
     * Open **C:\Windows\System32\drivers\etc\hosts**
     * Add Hyper-V IP into localhost name resolution, and give it a name. (in my case, I use isaaclto as Hyper-V Server name)
-    ![](../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-1.png)
+    ![|500](../../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-1.png)
 
 3. Configure the computer you'll use to manage the Hyper-V host
     * Open a Windows PowerShell session as Administrator.
@@ -62,19 +58,19 @@ Next, Let's look at this.
     Enable-WSManCredSSP -Role client -DelegateComputer "isaaclto"
     ```
     * you might also need to configure the following group policy (**Allow delegating fresh credentials with NTLM-only server authentication**)
-    ![](../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-2.png)
+    ![|500](../../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-2.png)
 
 
 4. Connect to Hyper-V Server Remotely
     * Right click on **Hyper-V Manager** at left-side panel, and click **Connect to Server...**
-	![](../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-3.png)
+	![](../../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-3.png)
     * Type Hyper-V network place at **Another computer**
     * Check **Connect as another user**, click **Set User...**, type your **username** and **password** and click **remember me**, see as below.
-	![](../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-4.png)
+	![|500](../../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-4.png)
 
 
 5. Done
-![](../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-5.png)
+![|500](../../attachments/How%20to%20manage%20Hyper-V%20hosts%20Remotely-5.png)
 
 
 ### Reference article

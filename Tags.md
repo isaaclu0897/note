@@ -1,0 +1,3 @@
+Status #toDo, #inProgress, #done
+categories #how-to, #what-is
+Keywords #windows, #linux, #python, #java, #os ...
