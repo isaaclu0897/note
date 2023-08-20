@@ -5,7 +5,7 @@
 1.  Get OS for Windows
 2.  Assuming the network connected
 
-### How do I enable the featrue for RDP
+### How do I enable the featrue for [[RDP]]
 
 1.  Open system for Control Panel
 2.  Set up Remote settings

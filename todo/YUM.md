@@ -1,0 +1,1 @@
+yum（ Yellow dog Updater, Modified）是一个在Fedora 和RedHat 以及SUSE 中的Shell 前端软件包管理器。 基于RPM 包管理，能够从指定的服务器自动下载RPM 包并且安装
