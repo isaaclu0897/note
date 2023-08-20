@@ -2,7 +2,7 @@
 
 ### What is IPMI
 
-The **Intelligent Platform Management Interface ([[IPMI]])** is a set of specifications that define a standardized method of managing and monitoring servers, especially those that are remote or difficult to access.
+The **Intelligent Platform Management Interface (IPMI)** is a set of specifications that define a standardized method of managing and monitoring servers, especially those that are remote or difficult to access.
 
 IPMI is a hardware solution independent of the server operating system, and is generally implemented through a **baseboard management controller ([[BMC]])**.
 
