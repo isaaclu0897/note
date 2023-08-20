@@ -4,7 +4,7 @@
 
 The **Intelligent Platform Management Interface (IPMI)** is a set of specifications that define a standardized method of managing and monitoring servers, especially those that are remote or difficult to access.
 
-IPMI is a hardware solution independent of the server operating system, and is generally implemented through a **baseboard management controller ([[BMC]])**.
+IPMI is a hardware solution independent of the server operating system, and is generally implemented through a **baseboard management controller ([[../../todo/BMC]])**.
 
 IPMI messages are transmitted over the **Intelligent Platform Management Bus ([IPMB](IPMB.md))**, a two-wire serial bus used for communication between Intelligent Platform Management Controllers (IPMCs) within the server. The IPMB typically employs the [[I2C]] (Inter-Integrated Circuit) protocol for implementation, a simple and low-speed serial communication protocol.
 
@@ -30,7 +30,7 @@ The most popular IPMI tool is ipmitool. It is an open-source command-line utilit
 
 #### Basic Commands
 
-Here are some basic [[ipmitool]] commands that can be used to control the target system:
+Here are some basic [[../../todo/ipmitool]] commands that can be used to control the target system:
 
 ```bash
 # Get System Info
