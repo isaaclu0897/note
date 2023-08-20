@@ -72,7 +72,7 @@ Back-End --> Front-End & DataBase
 * 建立`PostgreSQL`環境
 * 利用`GoLang`調用DB
 * 利用Gin整合
-* [[MVC]]設計模式
+* [[../../todo/MVC]]設計模式
 * 使用[[RestFul API]]實現調用DB(到這裏基本的網頁應該大致上成型了，再來就是開始練習結構化)
 * 進階與其他應用
     * 調整架構爲Loading balance
