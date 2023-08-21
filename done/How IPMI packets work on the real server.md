@@ -2,7 +2,7 @@
 #how-to, #ipmi, #communication , #fujitsu
 
 
-In the previous article, we introduced [How to decode IPMI packet](REPO/done/How%20to%20decode%20IPMI%20packet.md). However, today will explore the application of [[IPMI]] packets in a real server.
+In the previous article, we introduced [[How to decode IPMI packet]]. However, today will explore the application of [[IPMI]] packets in a real server.
 
 Through the previous content, you should already have the basic IPMI decoding ability, so we won't explain it in depth. In some cases, you need to have advanced control over the server. In this case, you need to understand the meaning of the packet.
 
