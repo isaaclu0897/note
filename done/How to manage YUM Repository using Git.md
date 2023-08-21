@@ -2,7 +2,7 @@
 
 ### Introduction
 
-A [[../todo/YUM]] repository is a collection of RPM packages that can be used to install, update, and remove software on a Linux system. **Managing a YUM repository using Git can provide a number of benefits, including version control, collaboration, and the ability to track changes over time**.
+A [YUM](../todo/YUM) repository is a collection of RPM packages that can be used to install, update, and remove software on a Linux system. **Managing a YUM repository using Git can provide a number of benefits, including version control, collaboration, and the ability to track changes over time**.
 
 In this article, we will provide a step-by-step guide for setting up and managing a YUM repository using Git.
 
