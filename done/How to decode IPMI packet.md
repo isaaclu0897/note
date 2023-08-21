@@ -2,7 +2,7 @@
 
 ### How to decode IPMB?
 
-[[IPMB]] stands for [[IPMI]] Bus, and it is a communication protocol used in IPMI to communicate with the baseboard management controller ([[../todo/BMC]]). To decode IPMB messages, you can use tools such as [[../todo/ipmitool]] in [[Linux]].
+[[IPMB]] stands for [[IPMI]] Bus, and it is a communication protocol used in IPMI to communicate with the baseboard management controller ([[../todo/BMC]]). To decode IPMB messages, you can use tools such as [ipmitool](../todo/ipmitool) in [[Linux]].
 
 #### IPMB Packet Payload Example
 
