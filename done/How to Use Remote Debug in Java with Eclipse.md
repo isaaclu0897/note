@@ -15,30 +15,45 @@ Remote debugging is suitable for the following as below:
 2. **Difficult to reproduce**: Remote debugging is a useful tool when the problem occurs only in specific scenarios.
 3. **Stage area verification**: Use remote debugging in the stage area to verify the operation of the code before deployment, and find out the root cause of problem.
 
-What you need to know is that remote debugging can be dangerous in a production area, so make sure your remote debugging operations have minimal impact on running applications to avoid affecting user experience and system performance.
+What you need to know is that remote debugging can be dangerous in a production area, so please make sure your remote debugging operations have minimal impact on running applications to avoid affecting user experience and system performance.
+→ 簡單地說就是正式區不要用就對惹
 
-下面待整理
 ### How to Use Remote Debug in Java with Eclipse
 
 To use remote debugging quickly, follow these steps:
 
-1. Start the remote Java application with the appropriate debug options.
-2. Configure the host and port settings to connect to the remote application in the IDE or JAVA runtime environment
-
+1. Run the remote Java application with the debug options.
+2. Configure destination settings to attach to the remote.
 ### Step by Step
 
 Follow these step-by-step instructions to use remote debugging in Java:
 
-Start the remote Java application with the appropriate debug options. Use the following command to start the Java application and enable remote debugging on port 8000:
+#### Run the remote Java application with the debug options.
+1. Start the remote Java application with the debug options. Use the following command to start the Java application, it will enable listen on remote port 8000:
 ```
-java -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n <class-name>
+# java
+java -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n <className>
+
+# jar
+java -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n <jarFile>
 ```
-Open Eclipse and create a new Debug Configuration by selecting "Remote Java Application" from the Debug Configurations dialog.
-Configure the Debug Configuration with the appropriate host and port settings.
-Click the "Debug" button to connect to the remote application and start debugging.
-You can now set breakpoints, inspect variables, and step through the code just as if you were debugging a local Java application.
-Note: If you need to debug a remote application that is running on a different network, you may need to configure your firewall to allow incoming connections on the debug port.
+
+* suspend
+	* y, the JVM will wait until debugger is attached
+	* n, the JVM will starts execution right away.
+#### Configure destination settings to attach to the remote
+1. Open Eclipse and create a new Debug Configuration by selecting "Remote Java Application" from the Debug Configurations dialog.
+2. Configure the Debug Configuration with the remote host and port.
+3. Click the "Debug" button to connect to the remote application and start debugging.
+4. You can now set breakpoints, inspect variables, and step through the code just as if you were debugging a local Java application.
+
+Note: If you need to debug a remote application that is running on a different network, you may need to check your firewall settings to allow incoming connections on the debug port.
 
 By following these steps, you can easily debug a Java program running on a remote machine using an IDE such as Eclipse.
 
-suspend 表示等待觸發
+### Reference
+
+> [Java Application Remote Debugging](https://www.baeldung.com/java-application-remote-debugging)
+> [JAVA的Remote Debug With Tomcat](https://akuma1.pixnet.net/blog/post/265919554-debug%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%E4%B9%8B%E5%85%AD----java%E7%9A%84remote-debug-with-tomcat)
+> []()
+> 
