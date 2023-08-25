@@ -26,7 +26,7 @@ In our scenario, because of the large amount of software to be installed, the fu
 As there is an increase in the number of Linux Distros, Programming Languages, Windows Users there is an increase in package managers and number of users.
 
 For Example:
-* Python uses its own PyPi Package Manager
+* Python uses its own Pip
 * Node JS uses NPM
 * Windows uses Chocolatey
 * MacOS uses HomeBrew
@@ -51,10 +51,7 @@ According to this article, we can clearly know that Chocolatey is the package ma
 > [WHY CHOCOLATEY?](https://docs.chocolatey.org/en-us/why)
 "You've never deployed software faster than you will with Chocolatey." -Rob Reynolds
 
-
-
-
-### related articles
+### Reference
 
 [chocolatey介紹與使用](https://www.jianshu.com/p/f6c4d261f356)
 [Need of Package Managers in Developer’s Life](https://www.geeksforgeeks.org/need-of-package-managers-in-developers-life/#:~:text=Package%20Managers%20helps%20in%20the,check%20security%20and%20other%20things.)
