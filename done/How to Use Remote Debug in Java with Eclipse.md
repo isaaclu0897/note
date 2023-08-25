@@ -1,4 +1,4 @@
-#how-to , #java , #remote , #debug
+#how-to , #java , #remote , #debug , #Eclipse
 
 Remote debugging is a powerful feature that allows you to debug a [[Java]] program running on a remote machine, using an Integrated Development Environment ([[IDE]]) such as [[Eclipse]].
 
@@ -37,8 +37,10 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n <clas
 # jar
 java -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n <jarFile>
 ```
+→ 這個是舊版的方式，目前來説這對我就夠用了
 
-* suspend
+* address, the port for the debugging server
+* suspend, default is n
 	* y, the JVM will wait until debugger is attached
 	* n, the JVM will starts execution right away.
 #### Configure destination settings to attach to the remote
@@ -55,5 +57,4 @@ By following these steps, you can easily debug a Java program running on a remot
 
 > [Java Application Remote Debugging](https://www.baeldung.com/java-application-remote-debugging)
 > [JAVA的Remote Debug With Tomcat](https://akuma1.pixnet.net/blog/post/265919554-debug%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97%E4%B9%8B%E5%85%AD----java%E7%9A%84remote-debug-with-tomcat)
-> []()
-> 
+> [Eclipse java debugging: source not found](https://stackoverflow.com/questions/6174550/eclipse-java-debugging-source-not-found)
