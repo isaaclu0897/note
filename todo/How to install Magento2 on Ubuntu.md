@@ -1,5 +1,5 @@
 
-[[Magento]] 是一個用PHP編寫的電商平臺，
+[[../done/What-is/Magento]] 是一個用PHP編寫的電商平臺，
 
 我選用ubuntu、apache、MySQL、elast
 
