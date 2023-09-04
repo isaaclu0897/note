@@ -38,6 +38,11 @@ nu-isp-cli 看來使用這個，應該是新唐的cli，不知道是不是原生
 總結兩個辦法
 1. 使用hidapitester發送訊號給鍵盤進入bootloader模式，然後等5秒，nu-isp-cli更新韌體
 2. usb鍵盤開機用 d l 進入bootloader，nu-isp-cli更新
+根據上面網友提的，再來我應該要，通過usb接上鍵盤，使用原廠的fireware update，然後把原始的fireware逆向出來，在u-boot不損壞的情況下，應該可以還原。
+1. 接上usb，進入boot模式
+2. 更新fireware
+3. 使用wireshark usbcap捕獲bin看看
+4. 然後可以在用Ghidra或是ida pro把代碼解析出來看看
 
 如果不小心把鍵盤燒成磚，可能可以用這個icp修好u-boot，但是真的到這裏就...有點慘了...
 p.s. nuc123這個晶片，看起來是arm的系統跟一般的mcu不一樣，所以他有自己的kernel，應該吧
