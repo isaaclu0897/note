@@ -41,7 +41,7 @@ nu-isp-cli 看來使用這個，應該是新唐的cli，不知道是不是原生
 根據上面網友提的，再來我應該要，通過usb接上鍵盤，使用原廠的fireware update，然後把原始的fireware逆向出來，在u-boot不損壞的情況下，應該可以還原。
 1. 接上usb，進入boot模式
 2. 更新fireware
-3. 使用wireshark usbcap捕獲bin看看
+3. 使用wireshark usbcap捕獲bin看看([[How to capture USB packets via Wireshark]])
 4. 然後可以在用Ghidra或是ida pro把代碼解析出來看看
 
 如果不小心把鍵盤燒成磚，可能可以用這個icp修好u-boot，但是真的到這裏就...有點慘了...
