@@ -18,6 +18,8 @@ https://ergotaiwan.tw/self-keyboard-basic-1/
 https://ziteh.github.io/posts/diyqmkkeyboard-2/
 https://progcat.gitlab.io/p/bacon-65-%E8%B2%B3-%E6%BA%96%E5%82%99nuc123%E7%9A%84%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/
 
+
+
 Q：如果想自己修改鍵盤firmware，但是又怕自己把firmware改壞，怎麽辦？
 A：想到的辦法有，備份原有的firmware
 從官方的update firmware將fireware程式copy出來
@@ -26,6 +28,20 @@ https://www.reddit.com/r/DuckyKeyboard/comments/zdkbn1/upgrade_firmware_for_duck
 https://www.reddit.com/r/DuckyKeyboard/comments/zker40/upgrade_firmware_for_ducky_one_3_tkl_rgb_on
 看起來很像是把原廠的firmware解出來，這樣可以做到我要的備份firmware
 貌似可以在虛擬機逆向工程他（poster說他是這樣做的
+
+https://blog.csdn.net/qq_36810852/article/details/107377821
+https://blog.csdn.net/pq113_6/article/details/106541581
+應該是可以直接在Wireshark操作，在延申兩篇wireshark usbcap操作
+
+Ghidra 看起來是一款與ida pro相似的逆向程式，但是他是Java寫的
+nu-isp-cli 看來使用這個，應該是新唐的cli，不知道是不是原生的，會比較簡單
+總結兩個辦法
+1. 使用hidapitester發送訊號給鍵盤進入bootloader模式，然後等5秒，nu-isp-cli更新韌體
+2. usb鍵盤開機用 d l 進入bootloader，nu-isp-cli更新
+
+如果不小心把鍵盤燒成磚，可能可以用這個icp修好u-boot，但是真的到這裏就...有點慘了...
+p.s. nuc123這個晶片，看起來是arm的系統跟一般的mcu不一樣，所以他有自己的kernel，應該吧
+https://danchouzhou.blogspot.com/2017/11/numicro-isp.html?m=1
 
 佈局
 
