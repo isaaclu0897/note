@@ -48,6 +48,26 @@ nu-isp-cli 看來使用這個，應該是新唐的cli，不知道是不是原生
 p.s. nuc123這個晶片，看起來是arm的系統跟一般的mcu不一樣，所以他有自己的kernel，應該吧
 https://danchouzhou.blogspot.com/2017/11/numicro-isp.html?m=1
 
+https://cloud.tencent.com/developer/article/1515285
+binwalk看起來有搞頭，可以快速提取檔案，但是不知道能不能提取exe中的bin
+利用binwalk取出檔案內容 binwalk --dd='.*' <檔案名稱>
+
+還有其他的工具像是
+* resource hacker 免費看起看只能改exe的資源，但是不能提取文件
+* Resource Tuner 要錢
+
+應該也可以先從新唐這裡入手，從source build一個bin，來看build出來的東西會長怎樣
+https://github.com/Pr0gCat/Bacon65
+
+應該可以用新唐的工具先找到我鍵盤arm的型號
+-> 看起來我的晶片是 NUC1261SG4AE 但是我的APROM跟Data有點大，不知道是不是因爲我改過設定的關係
+https://www.techpowerup.com/review/ducky-one-3-sf/4.html
+這裏有相似的鍵盤layout
+http://www.51hei.com/bbs/dpj-40116-1.html
+燒錄看起來有兩種方式 icp與isp，icp需要專用工具，isp可以通過usb燒錄。當然icp比isp多支持燒寫ldrom，雖然還不知道那個是幹嘛的
+我的aprom 跟 data看起來很大，是因爲我有修改鍵盤設定嗎，可以把鍵盤設定回復出廠模式看看
+看了資料LDROM應該是存bootload用的，我要搞的fireware應該就是APROM沒錯
+
 佈局
 
 * 60%的鍵盤沒有上下左右
