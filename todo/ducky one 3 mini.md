@@ -18,6 +18,9 @@ https://ergotaiwan.tw/self-keyboard-basic-1/
 https://ziteh.github.io/posts/diyqmkkeyboard-2/
 https://progcat.gitlab.io/p/bacon-65-%E8%B2%B3-%E6%BA%96%E5%82%99nuc123%E7%9A%84%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/
 
+建立qmk環境的方法
+https://docs.qmk.fm/#/newbs_getting_started?id=set-up-your-environment
+今天從這裏開始繼續攻擊
 
 
 Q：如果想自己修改鍵盤firmware，但是又怕自己把firmware改壞，怎麽辦？
@@ -60,13 +63,18 @@ binwalk看起來有搞頭，可以快速提取檔案，但是不知道能不能�
 https://github.com/Pr0gCat/Bacon65
 
 應該可以用新唐的工具先找到我鍵盤arm的型號
--> 看起來我的晶片是 NUC1261SG4AE 但是我的APROM跟Data有點大，不知道是不是因爲我改過設定的關係
+-> 看起來我的晶片是 NUC1261SG4AE 但是我的APROM跟Data有點大，不知道是不是因爲我改過設定的關係（看起來D就可以進入bootloader，應該是因爲u-boot是ducky客製的
+
 https://www.techpowerup.com/review/ducky-one-3-sf/4.html
 這裏有相似的鍵盤layout
 http://www.51hei.com/bbs/dpj-40116-1.html
 燒錄看起來有兩種方式 icp與isp，icp需要專用工具，isp可以通過usb燒錄。當然icp比isp多支持燒寫ldrom，雖然還不知道那個是幹嘛的
 我的aprom 跟 data看起來很大，是因爲我有修改鍵盤設定嗎，可以把鍵盤設定回復出廠模式看看
 看了資料LDROM應該是存bootload用的，我要搞的fireware應該就是APROM沒錯
+
+另外一個思路是從qmk這裏build一個，firmware，大膽的給他燒下去，這樣看起來，真的只要ldrom沒問題就沒事，還可以直接從原廠的update firmware恢復，但是怕....
+
+qmk這裏build一個，firmware先嘗試build看看不要燒錄就好，看看結果
 
 佈局
 
