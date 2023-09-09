@@ -3,7 +3,7 @@
 
 MCU, Micro Controller Unit 也被叫做 MC, UC, μC 是一種小型集成電路裝置，常用來控制各種電子產品或裝置的運行。
 
-通常會集成一個或多個運算單元(PU)、輸出入單元(GPIO)、輔助控制單元(Timer, UART, I2C, SPI, ADC等)及記憶體(Flash, SRAM, EEPROM)在同一顆晶片上，使其能夠在嵌入式系統(Embedded Systems)中執行複雜的計算和控制任務。簡單的來説 MCU 相當於是把一台電腦主機板塞進一個晶片中。
+通常會集成一個或多個運算單元(PU)、輸出入單元(GPIO)、輔助控制單元(Timer, UART, I2C, SPI, ADC等)及記憶體(Flash, SRAM, EEPROM)在同一顆晶片上，使其能夠在嵌入式系統([[Embedded Systems]])中執行複雜的計算和控制任務。簡單的來説 MCU 相當於是把一台電腦主機板塞進一個晶片中。
 
 由於物聯網的發展，目前有許多廠商也會把無線通訊部份（如WiFi, BlueTooth, Zeebee, 4G, 5G等）加入其中。
 
@@ -49,6 +49,8 @@ MCU依不同屬性有不同的分類方式
 > [推薦閲讀 - 30天學會MCU](https://ithelp.ithome.com.tw/articles/10314190)
 > [MCU的分類方式](https://ithelp.ithome.com.tw/articles/10267487)
 > [什麽是MCU與產業現況](https://omnixri.blogspot.com/2021/09/aiottinymlmcu.html)
+> [什麼是FPGA，它和MCU的差別為何？](https://hackmd.io/@metal35x/BJamZmpVL)
+> [SOC与MCU的区别是什么?](https://www.zhihu.com/question/312379687/answer/2401496058)
 > 
 > [Wiki - MCU - en](https://en.wikipedia.org/wiki/Microcontroller)
 > [Wiki - MCU - zh](https://zh.wikipedia.org/wiki/%E5%8D%95%E7%89%87%E6%9C%BA)
