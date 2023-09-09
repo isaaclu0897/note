@@ -23,6 +23,8 @@ https://docs.qmk.fm/#/newbs_getting_started?id=set-up-your-environment
 今天從這裏開始繼續攻擊
 
 
+[[MCU]]
+
 Q：如果想自己修改鍵盤firmware，但是又怕自己把firmware改壞，怎麽辦？
 A：想到的辦法有，備份原有的firmware
 從官方的update firmware將fireware程式copy出來
