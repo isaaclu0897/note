@@ -1,0 +1,1 @@
+A **system on a chip** or **system-on-chip** (**SoC**
