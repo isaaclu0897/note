@@ -1,23 +1,36 @@
 
 ### 什麽是MCU？
 
-MCU, Micro Controller Unit 也被叫做 MC, UC, μC。MCU 將運算單元(PU)、輸出入單元(GPIO)、輔助控制單元(Timer, UART, I2C, SPI, ADC等)及記憶體(Flash, SRAM, EEPROM)整合在同一顆晶片上。相當於把一台電腦塞進一個晶片中，故早期亦將MCU稱為「微電腦晶片」。更有許多廠商把無線通訊部份（如WiFi, BlueTooth, Zeebee, 4G, 5G等）加入其中。
+MCU, Micro Controller Unit 也被叫做 MC, UC, μC 是一種小型集成電路裝置，常用來控制各種電子產品或裝置的運行。
 
-和微處理器不同要注意！應該吧
+通常會集成一個或多個運算單元(PU)、輸出入單元(GPIO)、輔助控制單元(Timer, UART, I2C, SPI, ADC等)及記憶體(Flash, SRAM, EEPROM)在同一顆晶片上，使其能夠在嵌入式系統(Embedded Systems)中執行複雜的計算和控制任務。簡單的來説 MCU 相當於是把一台電腦主機板塞進一個晶片中。
 
-> ## 微型處理器和微型控制器有何區別？
-> 微型處理器和微型控制器是電子裝置的內部元件。微型處理器是 CPU 內部非常小的處理單元。它是電腦晶片上的單一積體電路，可對數位訊號執行各種算術和邏輯功能。數十個微型處理器在高效能伺服器內共同運作，以進行資料處理和分析。
-> 另一方面，微型控制器是洗衣機和恆溫器等智慧型電子裝置中的基本運算單元。它是一部非常小型的電腦，擁有自己的 RAM、ROM 和 I/O 系統，全部內嵌於單一晶片上。它可處理數位訊號並回應使用者輸入，但其運算能力受到限制。
+由於物聯網的發展，目前有許多廠商也會把無線通訊部份（如WiFi, BlueTooth, Zeebee, 4G, 5G等）加入其中。
 
-### 爲什麽要MCU？
+### 爲什麽要使用MCU？
 
-MCU的優點是體積小、價格便宜（視功能配置，約US$ 0.5 ~ 20）、功耗極低(mW等級)可使用電池供電、功能強大，從4bit到32bit都有，容易開發，有非常完整的工具鏈(Tool Chain)及生態體系(Ecosystem)，連中小學生在玩的Micro:bit, Arduino開發板都屬於MCU的範圍。但缺點是系統架構種類及供應商太多，沒有統一的開發工具。
+MCU的優點是體積小、價格便宜、低功耗，可使用電池供電，容易開發，有非常完整的工具。但缺點是系統架構種類及供應商太多，沒有統一的開發工具。
 
-另外受限價格因素，通常工作時脈不高（MHz等級），程式及記憶體區域都很小（KByte等級，少數能到MByte），不利大量運算，通常也沒有作業系統，僅有少數像Arm Mbed, RTOS能運行在較高階的MCU上。所以開發出來的程式就很難像手機上的APP一樣可以任意運行在不同硬體的手機上。
+優點：
+1. 體積小
+2. 低功耗，可以使用電池供電
+3. 容易開發，由於設計簡單以及完整的工具鏈(Tool Chain)及生態體系(Ecosystem)
+4. 價格便宜
+缺點：
+1. 工作時脈不高（MHz等級）
+2. 程式及記憶體區域都很小（KByte等級，少數能到MByte）
+3. 專為特定情境設計，程式難以跨平臺運用
+4. 系統架構種類及供應商太多，沒有統一的開發工具
+
+### MCU可以做什麽？
+
+MCU常常被用於控制家用電子設備，如：微波爐、洗衣機、智能手機、汽車電子系統、工業自動化設備、醫療設備、無人機等等。它們可以根據預定的程式或指令來執行不同的任務，例如監控感測器數據、處理通信、控制馬達、執行演算法等。
 
 ### MCU有哪些分類
 
-而MCU依不同屬性有不同的分類方式，如Fig. 6-1所示。以下就根據不同屬性作一簡單說明。
+![](../../attachments/MCU.png)
+
+MCU依不同屬性有不同的分類方式
 
 依「**工作用途**」可分為使用者可完全使用全部資源的「通用型MCU」，和有特定用途，僅需少量程式碼或完全不需使用者程式的「專用型MCU」，當然也有兩者混合的類型，端看面對的市場而定。
 
@@ -33,8 +46,26 @@ MCU的優點是體積小、價格便宜（視功能配置，約US$ 0.5 ~ 20）�
 
 ### Reference
 
-https://omnixri.blogspot.com/2021/09/aiottinymlmcu.html
-https://ithelp.ithome.com.tw/articles/10267487
-https://en.wikipedia.org/wiki/Microcontroller
-https://zh.wikipedia.org/wiki/%E5%8D%95%E7%89%87%E6%9C%BA
-https://aws.amazon.com/tw/compare/the-difference-between-microprocessors-microcontrollers/
+> [推薦閲讀 - 30天學會MCU](https://ithelp.ithome.com.tw/articles/10314190)
+> [MCU的分類方式](https://ithelp.ithome.com.tw/articles/10267487)
+> [什麽是MCU與產業現況](https://omnixri.blogspot.com/2021/09/aiottinymlmcu.html)
+> 
+> [Wiki - MCU - en](https://en.wikipedia.org/wiki/Microcontroller)
+> [Wiki - MCU - zh](https://zh.wikipedia.org/wiki/%E5%8D%95%E7%89%87%E6%9C%BA)
+> 
+> [處理器的分類，CPU、GPU、MCU、DSP、MPU](https://www.stockfeel.com.tw/%E8%99%95%E7%90%86%E5%99%A8-cpu-gpu-mcu-dsp-mpu/)
+> [微型處理器和微型控制器的差別](https://aws.amazon.com/tw/compare/the-difference-between-microprocessors-microcontrollers/)
+
+
+---
+
+與[[SoC]]不同
+
+
+什麽是CPU、什麽是MPU
+什麽是MCU、什麽是SOC
+和微處理器不同要注意！應該吧
+
+> ## 微型處理器和微型控制器有何區別？
+> 微型處理器和微型控制器是電子裝置的內部元件。微型處理器是 CPU 內部非常小的處理單元。它是電腦晶片上的單一積體電路，可對數位訊號執行各種算術和邏輯功能。數十個微型處理器在高效能伺服器內共同運作，以進行資料處理和分析。
+> 另一方面，微型控制器是洗衣機和恆溫器等智慧型電子裝置中的基本運算單元。它是一部非常小型的電腦，擁有自己的 RAM、ROM 和 I/O 系統，全部內嵌於單一晶片上。它可處理數位訊號並回應使用者輸入，但其運算能力受到限制。
