@@ -8,9 +8,9 @@ Linux 的最大優勢在於它是開源的。它基於 GNU 通用公共许可证
 
 Linux 有許多不同的發行版，每個發行版都有其特定的特性和用途。以下是一些常見的 Linux 發行版，每個發行版都針對不同的需求和用途提供了特定的功能和支援：
 - **[[Ubuntu]]：** 是一個以用戶友好性和易用性而聞名的 Linux 發行版，適合桌面和伺服器使用。
-- **Red Hat Enterprise Linux ([[RHEL]])：** RHEL 是一個針對企業環境的商業級 Linux 發行版，提供了高度的支援和安全性。
-- **Oracle Linux([[OL]])：** 由 Oracle 提供的 Linux 發行版，主要用於運行 Oracle 數據庫和應用程序。基本上他的Kernel是基於RHEL的。
-- **SUSE Linux Enterprise([[SLES]])：** SUSE 提供的高度專業的企業級 Linux 發行版，特別適用於伺服器和雲計算環境，例如在支援 SAP 應用方面表現出色。
+- **Red Hat Enterprise Linux (RHEL)：** RHEL 是一個針對企業環境的商業級 Linux 發行版，提供了高度的支援和安全性。
+- **Oracle Linux(OL)：** 由 Oracle 提供的 Linux 發行版，主要用於運行 Oracle 數據庫和應用程序。基本上他的Kernel是基於RHEL的。
+- **SUSE Linux Enterprise(SLES)：** SUSE 提供的高度專業的企業級 Linux 發行版，特別適用於伺服器和雲計算環境，例如在支援 SAP 應用方面表現出色。
 - **[[CentOS]]：** 這是一個曾經廣受歡迎，免費且開源的 RHEL Kernel 發行版，主要用於伺服器應用。值得注意的是，目前 CentOS 已停止維護。
 - **[[VMware]]：** VMware 的 ESXi 是一個虛擬化平台，基於Linux的嵌入式操作系統，用於虛擬化伺服器資源。
 

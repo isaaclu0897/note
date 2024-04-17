@@ -1,0 +1,3 @@
+KBC也叫做EC是一個Soc，用來控制電腦的硬體。他的作用跟Server的BMC很相似。
+
+ACPI
